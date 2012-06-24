@@ -1,3 +1,10 @@
 # Files to be ignored by Git.
 
 *~
+
+/_bin/
+/_res/
+/_sources/
+/cgi-bin/
+
+/*.ru/
