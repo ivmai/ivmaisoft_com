@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang=en-us>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<META http-equiv="content-language" content="en-us">
+<META name="distribution" content="global">
+<META name="robots" content="all">
+<LINK rel=stylesheet type="text/css" href="../style.css">
+<TITLE>JCGO :: Demos (JCGO - a java2c/java2exe solution)</TITLE>
+<META name="keywords"
+content="acceleration, deploy, dll, embedded jvm, exe, gcj, install,
+java ahead-of-time compiler, java application launcher, java native compiler,
+java-to-c, java-to-exe, java2c, java2exe, jcgo, jdk, jit, obfuscate, optimize,
+performance, protection">
+</HEAD>
+
+<BODY>
+
+<DIV class=logo>
+<A href="../index.htm"><IMG src="../logo.gif" alt=""></A>
+</DIV>
+
+<DIV class=navig-bar>
+<TABLE>
+<TR>
+<TD><A href="../index.htm">[Home &amp; Search]</A></TD>
+<TD><A href="../news.htm">News</A></TD>
+<TD><A href="index.htm">JCGO</A></TD>
+<TD><A href="download.htm">Get it!</A></TD>
+<TD>Demos</TD>
+<TD><A href="links.htm">Web Links</A></TD>
+</TABLE></DIV>
+
+<H2>JCGO: Compiled Demos page</H2>
+
+<DIV class=page-foreword>
+<P>JCGO, a Java source to C code (java2c) translator, is an open-source
+software product developed and supported by Ivan Maidanski. With JCGO you
+could make your Java applications run faster, consume less system resources,
+harder to decompile and easier to deploy for the target platforms...
+</DIV>
+
+<DIV>
+<P>The following demo applications are converted from Java to
+<ACRONYM>C</ACRONYM> by <ACRONYM>JCGO</ACRONYM>.
+</DIV>
+
+<DIV class=subsection><A name=benchmark></A>
+<H3>1. Some speed benchmarks</H3>
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>filename</TH><TH><ACRONYM>OS</ACRONYM></TH><TH><ACRONYM>CPU</ACRONYM></TH>
+<TH><ACRONYM>C</ACRONYM> compiler</TH>
+<TH class=short-field>Garbage Collector</TH>
+<TH class=short-field>build command</TH>
+<TH class=short-field>speed gain, times</TH>
+<TH class=short-field>packed exe size, KiB</TH><TH>comment</TH>
+<TR>
+<TD class=textual>GCBench.exe</TD><TD>Win32</TD><TD>x86</TD><TD>MinGW</TD>
+<TD>BoehmGC</TD><TD>[3626]</TD> <TD>1.3</TD><TD>55</TD>
+<TD class=textual>&nbsp;</TD>
+<TR>
+<TD class=textual>CaffeineMarkEmbeddedApp.exe</TD><TD>Win32</TD><TD>x86</TD>
+<TD>MinGW</TD><TD>BoehmGC</TD><TD>[3626]</TD><TD>6 !!!</TD><TD>60</TD>
+<TD class=textual>GCC has much higher optimization level than JIT</TD>
+<TR>
+<TD class=textual>scimark2.exe</TD><TD>Win32</TD><TD>x86</TD><TD>MinGW</TD>
+<TD>-</TD><TD>[3625]</TD><TD>1.55</TD><TD>60</TD><TD class=textual>&nbsp;</TD>
+<TR>
+<TD class=textual>QSort.exe</TD><TD>Win32</TD><TD>x86</TD><TD>MinGW</TD>
+<TD>-</TD><TD>[3625]</TD><TD>1.2</TD><TD>30</TD>
+<TD class=textual>"quick-sort" benchmark</TD>
+</TABLE>
+<P>The download link: <A href="http://sourceforge.net/projects/jcgo/files/demos/console/SpeedTests-win32.7z/download">SpeedTests-win32.7z</A>.
+<P>Notes:
+<UL>
+<LI>the speed is compared to Sun <ACRONYM>JRE</ACRONYM> v1.6;
+<LI>the original source code is freely available on the
+<A href="links.htm#java-benchmark">web</A>;
+<LI>"CaffeineMarkEmbeddedApp" and "GCBench"
+sources require minor fixing (see the patch files in the
+<ACRONYM>JCGO</ACRONYM> "examples" folder);
+<LI>the above benchmarks have been translated to <ACRONYM>C</ACRONYM> using
+"<CODE>jcgo &lt;AppMainClass> -src $~/goclsp/clsp_asc @$~/stdpaths.in</CODE>"
+command;
+<LI>the "build command" (corresponding to the number shown) is in the
+<ACRONYM>JCGO</ACRONYM> "Samples" file;
+<LI>the above benchmarks had been first compiled with <ACRONYM>GCC</ACRONYM>
+<CODE>-fprofile-generate</CODE> option and, after a test run, have been
+recompiled with <CODE>-fprofile-use</CODE> option (for better optimizations);
+<LI>the produced stand-alone executable files have been
+<A href="links.htm#exe-packers">packed</A> by <ACRONYM>UPX</ACRONYM> with
+"--brute" option.
+</UL></DIV>
+
+<DIV class=subsection><A name=hello-world></A>
+<H3>2. Hello world...</H3>
+<P>Some trivial console programs from the <ACRONYM>JCGO</ACRONYM> "examples"
+folder ("Empty1" - a do-nothing program just to show code size minimum;
+"ShowTZ" - shows the current <ACRONYM>GMT</ACRONYM>/local time and
+timezone/locale info).
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>filename</TH><TH><ACRONYM>OS</ACRONYM></TH><TH><ACRONYM>CPU</ACRONYM></TH>
+<TH><ACRONYM>C</ACRONYM> compiler</TH>
+<TH class=short-field>Garbage Collector</TH>
+<TH class=short-field>build command</TH>
+<TH class=short-field>packed exe size, KiB</TH>
+<TR>
+<TD class=textual>hello.exe</TD><TD>Win32</TD><TD>x86</TD><TD>MinGW</TD>
+<TD>-</TD><TD>[3613]</TD><TD>13</TD>
+<TR>
+<TD class=textual>hello.com</TD><TD>DOS</TD><TD>i8086</TD><TD>Watcom</TD>
+<TD>-</TD><TD>[2906]</TD><TD>15</TD>
+<TR>
+<TD class=textual>empty1.com</TD><TD>DOS</TD><TD>i8086</TD><TD>Watcom</TD>
+<TD>-</TD><TD>[2906]</TD><TD>4.6</TD>
+<TR>
+<TD class=textual>ShowTZ.exe</TD><TD>Win32</TD><TD>x86</TD><TD>MinGW</TD>
+<TD>-</TD><TD>[3612]</TD><TD>140</TD>
+</TABLE>
+<P>The download link:
+<A href="http://sourceforge.net/projects/jcgo/files/demos/console/HelloWorld-win32.7z/download">HelloWorld-win32.7z</A>.
+<P>Notes:
+<UL>
+<LI>"Hello" sample has been translated to <ACRONYM>C</ACRONYM> using
+"<CODE>jcgo &lt;AppMainClass> -src $~/goclsp/clsp_asc @$~/stdpaths.in</CODE>"
+command;
+<LI>the produced stand-alone executable files (except for "Empty1" sample)
+have been <A href="links.htm#exe-packers">packed</A> by
+<ACRONYM>UPX</ACRONYM>;
+<LI>"ShowTZ" may require setting "CLASSPATH" environment variable (to
+"<CODE>C:\JCGO\classpath-0.93\resource</CODE>") for accessing non-default
+locale information.
+</UL></DIV>
+
+<DIV class=subsection><A name=showprop></A>
+<H3>3. Java System properties</H3>
+<P>"ShowProp" console sample program shows major Java system properties preset
+by the <ACRONYM>JCGO</ACRONYM> runtime depending on the execution environment.
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>filename</TH><TH><ACRONYM>OS</ACRONYM></TH><TH><ACRONYM>CPU</ACRONYM></TH>
+<TH><ACRONYM>C</ACRONYM> compiler</TH>
+<TH class=short-field>Garbage Collector</TH>
+<TH class=short-field>build command</TH>
+<TH class=short-field>packed exe size, KiB</TH>
+<TR>
+<TD class=textual>ShowProp.exe</TD><TD>Win32</TD><TD>x86</TD><TD>MinGW</TD>
+<TD>-</TD><TD>[3618]</TD><TD>43</TD>
+<TR>
+<TD class=textual>ShowProp-amd64.exe</TD><TD>Win64</TD><TD>amd64</TD>
+<TD>mingw-w64</TD><TD>-</TD><TD>[3905]</TD><TD>150</TD>
+<TR>
+<TD class=textual>ShowProp-djgpp.exe</TD><TD>DOS</TD><TD>x86</TD>
+<TD>DJGPP</TD><TD>-</TD><TD>[4310]</TD><TD>105</TD>
+<TR>
+<TD class=textual>ShowProp-dos16.exe</TD><TD>DOS</TD><TD>i8086</TD>
+<TD>Watcom</TD><TD>TinyGC</TD><TD>[2903]</TD><TD>85</TD>
+<TR>
+<TD class=textual>ShowProp-linux-x86</TD><TD>Linux</TD><TD>x86</TD>
+<TD>GCC</TD><TD>-</TD><TD>[1009]</TD><TD>50</TD>
+<TR>
+<TD class=textual>ShowProp-linux-amd64</TD><TD>Linux</TD><TD>amd64</TD>
+<TD>GCC</TD><TD>-</TD><TD>[1307]</TD><TD>55</TD>
+<TR>
+<TD class=textual>ShowProp-freebsd-x86</TD><TD>FreeBSD</TD><TD>x86</TD>
+<TD>GCC</TD><TD>-</TD><TD>[1506]</TD><TD>50</TD>
+<TR>
+<TD class=textual>ShowProp-solaris-amd64</TD><TD>Solaris</TD><TD>amd64</TD>
+<TD>Sun CC</TD><TD>-</TD><TD>[1806]</TD><TD>220</TD>
+</TABLE>
+<P>The tar-ball download link:
+<A href="http://sourceforge.net/projects/jcgo/files/demos/console/ShowProp-bin.tar.gz/download">ShowProp-bin.tar.gz</A>.
+<P>Notes:
+<UL>
+<LI>the sample code has been translated to <ACRONYM>C</ACRONYM> using
+"<CODE>jcgo -src $~/examples ShowProp -src $~/goclsp/clsp_asc @$~/stdpaths.in</CODE>"
+command;
+<LI>the produced stand-alone executable files have been
+<A href="links.htm#exe-packers">packed</A> by <ACRONYM>UPX</ACRONYM>;
+<LI>"ShowProp-djgpp" may require "DOSLFN"
+<A href="links.htm#msdos-special">utility</A> (if executed on a pure
+<ACRONYM>DOS</ACRONYM> system);
+<LI>the <ACRONYM>JCGO</ACRONYM> runtime identifies itself by setting
+"java.vm.name" system property to "JCGO client VM" value.
+</UL></DIV>
+
+<DIV class=subsection><A name=console-apps></A>
+<H3>4. Some third-party console single-threaded tools</H3>
+<P>"ProGuard" and "JavaCC" are two samples of mature console applications.
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>application download filename</TH><TH><ACRONYM>OS</ACRONYM></TH>
+<TH><ACRONYM>CPU</ACRONYM></TH><TH><ACRONYM>C</ACRONYM> compiler</TH>
+<TH class=short-field>Garbage Collector</TH>
+<TH class=short-field>build command</TH>
+<TH class=short-field>exe size (unpacked), KiB</TH>
+<TH class=short-field>application download size, MiB</TH>
+<TH>comment</TH>
+<TR>
+<TD class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/console/ProGuard-4_5beta2-cmd-win32.7z/download">proguard.exe</A></TD>
+<TD>Win32</TD><TD>x86</TD><TD>MinGW</TD><TD>BoehmGC</TD><TD>[3620]</TD>
+<TD>1194</TD><TD>0.33</TD>
+<TD>stand-alone console executable (ProGuard v4.5 beta2 Java class file
+optimizer and obfuscator); see <A href="links.htm#java-optimizers">source</A>
+code</TD>
+<TR>
+<TD rowspan=3 class=textual>JavaCC-5_0-win32-jcgo.7z</TD>
+<TD rowspan=3>Win32</TD><TD rowspan=3>x86</TD><TD rowspan=3>MinGW</TD>
+<TD rowspan=3>-</TD><TD rowspan=3>[3614]</TD>
+<TD>1070</TD><TD rowspan=3>0.58</TD>
+<TD rowspan=3>the complete JavaCC v5.0 binary distributive pack (containing
+javacc, jjdoc, jjtree executables); see
+<A href="links.htm#java-parser-gen">source</A> code</TD>
+<TR><TD>410</TD>
+<TR><TD>908</TD>
+</TABLE>
+<P>Notes:
+<UL>
+<LI>these applications have been translated using the "default"
+command - "<CODE>jcgo &lt;AppMainClass> @$~/stdpaths.in</CODE>";
+<LI>the produced "proguard" stand-alone executable file has
+been <A href="links.htm#exe-packers">packed</A> by <ACRONYM>UPX</ACRONYM> (to
+reduce the disk footprint);
+<LI>"proguard" may require setting "PROG_JAVA_HOME" environment variable
+(pointing to some <ACRONYM>JRE</ACRONYM> installation folder, eg.
+"<CODE>C:\JDK16\JRE</CODE>") for having access to the Java core classes
+library;
+<LI>"JavaCC" resources are put to "classes" folder of its installation folder;
+</UL>
+<P>Disk footprint comparison: the size of "proguard" packed stand-alone
+executable file is even a bit smaller than the size of the optimized,
+obfuscated (and packed) "proguard.jar" file.
+</DIV>
+
+<DIV class=subsection><A name=swt-apps></A>
+<H3>5. Third-party SWT applications</H3>
+<P>These samples are based on the Eclipse <ACRONYM>SWT</ACRONYM> v3.6M4
+<A href="links.htm#java-gui-libs">GUI toolkit</A>.
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>application download filename</TH><TH><ACRONYM>OS</ACRONYM></TH>
+<TH><ACRONYM>CPU</ACRONYM></TH>
+<TH class=short-field><ACRONYM>SWT</ACRONYM> back-end</TH>
+<TH class=short-field>build command</TH>
+<TH class=short-field>exe size (unpacked), MiB</TH>
+<TH class=short-field>application download size, MiB</TH>
+<TH class=short-field>start-up RAM usage, MiB</TH>
+<TR>
+<A name=tuxguitar></A>
+<TD rowspan=2 class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/swt/tuxguitar-1_2-linux-x86-jcgo.tar.gz/download">tuxguitar-1_2-linux-x86-jcgo.tar.gz</A></TD>
+<TD rowspan=2>Linux</TD><TD>amd64</TD><TD>gtk_64</TD><TD>[1402]</TD>
+<TD>6.0</TD><TD rowspan=2>6.8</TD><TD>6</TD>
+<TR><TD>x86</TD><TD>gtk</TD><TD>[1102]</TD><TD>4.0</TD><TD>4</TD>
+<TR>
+<TD rowspan=2 class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/swt/tuxguitar-1_2-windows-x86-jcgo.7z/download">tuxguitar-1_2-windows-x86-jcgo.7z</A></TD>
+<TD>Win64</TD><TD>amd64</TD><TD>win32_64</TD><TD>[4002]</TD><TD>5.6</TD>
+<TD rowspan=2>5.6</TD><TD>20</TD>
+<TR><TD>Win32</TD><TD>x86</TD><TD>win32</TD><TD>[3702]</TD><TD>4.3</TD>
+<TD>16</TD>
+<TR>
+<TD rowspan=3 class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/swt/SWT_ControlExample-3_6M4-linux-x86-jcgo.tar.gz/download">SWT_ControlExample-3_6M4-linux-x86-jcgo.</A></TD>
+<TD rowspan=3>Linux</TD><TD>amd64</TD><TD>gtk_64</TD><TD>[1401]</TD>
+<TD>2.9</TD><TD rowspan=3>3.8</TD><TD>2</TD>
+<TR><TD rowspan=2>x86</TD><TD>gtk</TD><TD>[1101]</TD><TD>2.2</TD><TD>4</TD>
+<TR><TD>motif</TD><TD>[1201]</TD><TD>1.9</TD><TD>1</TD>
+<TR>
+<TD rowspan=2 class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/swt/SWT_ControlExample-3_6M4-win32-jcgo.7z/download">SWT_ControlExample-3_6M4-win32-jcgo.7z</A></TD>
+<TD>Win64</TD><TD>amd64</TD><TD>win32_64</TD><TD>[4001]</TD><TD>2.8</TD>
+<TD rowspan=2>2.2</TD><TD>12</TD>
+<TR><TD>Win32</TD><TD>x86</TD><TD>win32</TD><TD>[3701]</TD><TD>2.2</TD>
+<TD>5</TD>
+<TR>
+<TD rowspan=2 class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/swt/SWT_GraphicsExample-3_6M4-win32-jcgo.7z/download">SWT_GraphicsExample-3_6M4-win32-jcgo.7z</A></TD>
+<TD>Win64</TD><TD>amd64</TD><TD>win32_64</TD><TD>[4001]</TD><TD>1.5</TD>
+<TD rowspan=2>1.7</TD><TD>8</TD>
+<TR><TD>Win32</TD><TD>x86</TD><TD>win32</TD><TD>[3701]</TD><TD>1.2</TD>
+<TD>5</TD>
+</TABLE>
+<P>Notes:
+<UL>
+<LI>some features (widgets) may not work in case of <ACRONYM>motif</ACRONYM>
+back-end (still under development by the Eclipse team);
+<LI>each sample download file for SWT_ControlExample and "tuxguitar" contains
+3 (2) completely stand-alone executable (and a set of accompanying
+<ACRONYM>DLL</ACRONYM>/<ACRONYM>DSO</ACRONYM>) files for the specified
+<ACRONYM>SWT</ACRONYM> back-ends;
+<LI>"<A class=external href="http://www.tuxguitar.com.ar">tuxguitar</A>" is
+a multitrack tablature editor and player (a lot of tablatures available online
+to try it out, eg.
+<A class=external href="http://www.tablatures.tk/download-file.php?id=NDU0NTg=">this</A>
+song).
+</UL>
+<P>The translation commands:
+<UL>
+<LI>for SWT_GraphicsExample - <CODE>jcgo -src src;swt_src org.eclipse.swt.examples.graphics.GraphicsExample @$~/stdpaths.in</CODE>
+<LI>for SWT_ControlExample - <CODE>jcgo -src src;swt_src org.eclipse.swt.examples.controlexample.ControlExample @$~/stdpaths.in -rg org.eclipse.swt.widgets -rg org.eclipse.swt.browser.Browser</CODE>
+<LI>for "tuxguitar" - see in the <ACRONYM>JCGO</ACRONYM> "examples" folder.
+</UL>
+<P>Some of the above <ACRONYM>SWT</ACRONYM> (and console) demo applications
+are also listed on the third-party sites introducing the competitive
+technologies and products, like:
+<UL>
+<LI>Excelsior JET
+<A class=external href="http://www.excelsior-usa.com/java-download-size.html">Download size reduction for Java applications</A>;
+<LI>micro-libgcj
+<A class=external href="http://ulibgcj.sourceforge.net/uswt.html">Example Applications</A>.
+</UL></DIV>
+
+<DIV class=subsection><A name=awt-gtkpeer-apps></A>
+<H3>6. Third-party AWT applications using gtkpeer</H3>
+<P>Classpath "gtkpeer" <ACRONYM>AWT</ACRONYM> back-end is used for the
+following <ACRONYM>GUI</ACRONYM> applications.
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>application download filename</TH><TH><ACRONYM>OS</ACRONYM></TH>
+<TH><ACRONYM>CPU</ACRONYM></TH>
+<TH class=short-field>build command</TH>
+<TH class=short-field>exe size (unpacked), MiB</TH>
+<TH class=short-field>application download size, MiB</TH>
+<TR>
+<TD rowspan=2 class=textual><A href="http://sourceforge.net/projects/jcgo/files/demos/gnu-awt/J2dBenchmarkGUI-gtkpeer-linux-x86-jcgo.tar.gz/download">J2dBenchmarkGUI-gtkpeer-linux-x86-jcgo.tar.gz</A></TD>
+<TD rowspan=2>Linux</TD><TD>amd64</TD><TD>[5301]</TD><TD>4.7</TD>
+<TD rowspan=2>2.9</TD>
+<TR><TD>x86</TD><TD>[5201]</TD><TD>3.2</TD>
+</TABLE>
+<P>Notes:
+<UL>
+<LI>some features (widgets) are unimplemented (or may not work correctly) in
+the <ACRONYM>gtkpeer</ACRONYM> back-end;
+<LI>the Java-to-C translation command for the "J2dBenchmarkGUI" application is
+<CODE>jcgo -src $~/goclsp/clsp_pgk -src $~/classpath-0.93/examples gnu.classpath.examples.java2d.J2dBenchmarkGUI @$~/stdpaths.in</CODE>
+</UL></DIV>
+
+<DIV class=subsection><A name=sunawt-apps></A>
+<H3>7. Third-party AWT applications using Sun J2SE</H3>
+<P>These applications are using Sun <ACRONYM>J2SE</ACRONYM> v1.4
+<ACRONYM>AWT</ACRONYM>/Swing <ACRONYM>GUI</ACRONYM> front-end.
+<TABLE class=info-table border>
+<TR class=table-header>
+<TH>application download filename</TH><TH><ACRONYM>OS</ACRONYM></TH>
+<TH><ACRONYM>CPU</ACRONYM></TH>
+<TH class=short-field>sun-AWT build command</TH>
+<TH class=short-field>exe size (unpacked), MiB</TH>
+<TH class=short-field>application download size, MiB</TH>
+<TH class=short-field>start-up RAM usage, MiB</TH>
+<TR>
+<TD class=textual>jEdit-4_2-win32-jcgo.7z</TD>
+<TD>Win32</TD><TD>x86</TD><TD>[106]</TD><TD>6.6</TD><TD>4.6</TD><TD>17</TD>
+<TR>
+<TD class=textual>JDK_DrawTest-win32-jcgo.7z</TD>
+<TD>Win32</TD><TD>x86</TD><TD>[107]</TD><TD>1.8</TD><TD>1.1</TD><TD>4</TD>
+<TR>
+<TD class=textual>JDK_Java2Demo-win32-jcgo.7z</TD>
+<TD>Win32</TD><TD>x86</TD><TD>[103]</TD><TD>5.2</TD><TD>3.6</TD><TD>23</TD>
+<TR>
+<TD class=textual>JDK_JavaSound-win32-jcgo.7z</TD>
+<TD>Win32</TD><TD>x86</TD><TD>[104]</TD><TD>4.1</TD><TD>3.6</TD><TD>10</TD>
+<TR>
+<TD class=textual>JDK_SwingSet2-win32-jcgo.7z</TD>
+<TD>Win32</TD><TD>x86</TD><TD>[105]</TD><TD>4.9</TD><TD>4.7</TD><TD>37</TD>
+<TR>
+<TD class=textual>JDK_SwingSet2-linux-x86-jcgo.tar.gz</TD>
+<TD>Linux</TD><TD>x86</TD><TD>[305]</TD><TD>5.0</TD><TD>7.0</TD><TD>4</TD>
+<TR>
+<TD class=textual>JDK_SwingSet2-solaris-x86-jcgo.tar.gz</TD>
+<TD>Solaris</TD><TD>x86</TD><TD>[404]</TD><TD>10</TD><TD>6.7</TD><TD>&nbsp;</TD>
+</TABLE>
+<P>Notes:
+<UL>
+<LI>these AWT demo applications are, at present, distributed here under the
+terms of <ACRONYM>J2SE</ACRONYM> "Sun Community Source License" (for research
+use only);
+<LI><ACRONYM>JDK</ACRONYM> demo (<ACRONYM>jfc</ACRONYM>) applications require
+minor bug-fixing - see for it (and for the Java-to-C translation commands) in
+the <ACRONYM>JCGO</ACRONYM> "examples" folder.
+</UL></DIV>
+
+<DIV class=subsection><A name=other-projects></A>
+<H3>8. Other projects using JCGO</H3>
+<P>Here are the links to some other projects that use <ACRONYM>JCGO</ACRONYM>
+to produce binary executables (see "Browse file for" or "Download" pages):
+<UL>
+<LI><A class=external target="_blank" href="http://jadretro.sourceforge.net">JadRetro</A>
+(a Java decompiler helper)
+<LI><A class=external target="_blank" href="http://ivmaidns.sourceforge.net">IvmaiDNS tools</A>
+(a java <ACRONYM>DNS</ACRONYM> client)
+<LI><A class=external target="_blank" href="http://ivmaiasn.sourceforge.net">IvmaiAsn ASN1/ECN/XDR Tools</A>
+(java tools for parsing <ACRONYM>ASN.1</ACRONYM>)
+<LI><A class=external target="_blank" href="https://sourceforge.net/projects/sasplanetj/">sasplanetj CE</A>
+(a <ACRONYM>PocketPC</ACRONYM> version of <ACRONYM>SAS.Planet</ACRONYM> Geo
+cache browser)
+</UL></DIV>
+
+<DIV class=page-footer>
+<P class=keywords>Keywords: acceleration, deploy, dll, embedded jvm, exe, gcj,
+install, java ahead-of-time compiler, java application launcher,
+java native compiler, java-to-c, java-to-exe, java2c, java2exe, jcgo, jdk,
+jit, obfuscate, optimize, performance, protection
+</P>
+<TABLE>
+<TR>
+<TD class=modif-date>Last updated: <SPAN class=date>17-Dec-2011</SPAN></TD>
+<TD class=external-counter>
+<script type="text/javascript" language="javascript"> hotlog_js="1.0"; hotlog_r=""+Math.random()+"&s=2048595&im=33&r="+ escape(document.referrer)+"&pg="+escape(window.location.href); document.cookie="hotlog=1; path=/"; hotlog_r+="&c="+(document.cookie?"Y":"N"); </script>
+<script type="text/javascript" language="javascript1.1"> hotlog_js="1.1"; hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N"); </script>
+<script type="text/javascript" language="javascript1.2"> hotlog_js="1.2"; hotlog_r+="&wh="+screen.width+"x"+screen.height+"&px="+ (((navigator.appName.substring(0,3)=="Mic"))?screen.colorDepth:screen.pixelDepth); </script>
+<script type="text/javascript" language="javascript1.3"> hotlog_js="1.3"; </script>
+<script type="text/javascript" language="javascript"> hotlog_r+="&js="+hotlog_js; document.write('<a href="http://click.hotlog.ru/?2048595" target="_top"><img '+ 'src="http://hit33.hotlog.ru/cgi-bin/hotlog/count?'+ hotlog_r+'" border="0" width="88" height="31" alt="HotLog"><\/a>'); </script>
+<noscript> <a href="http://click.hotlog.ru/?2048595" target="_top"><img src="http://hit33.hotlog.ru/cgi-bin/hotlog/count?s=2048595&im=33" border="0" width="88" height="31" alt="HotLog"></a> </noscript>
+</TD>
+<TD class=copyright>&copy; 2010-2011 <A class=mailto href="mailto:ivmai@mail.ru">Ivan Maidanski</A>.</TD>
+</TABLE></DIV>
+
+</BODY></HTML>

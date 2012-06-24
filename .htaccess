@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ivmaisoft\.com [NC]
+RewriteRule (.*) http://www\.ivmaisoft\.com/$1 [R=301,L]
+
+AddType application/x-7z-compressed .7z
+SetEnvIfNoCase Request_URI \.(7z|bz2)$ no-gzip dont-vary
+
+Redirect 301 /ivmaiasn/index.htm http://ivmaiasn.sourceforge.net/
+Redirect 301 /ivmaiasn/ http://ivmaiasn.sourceforge.net/
+Redirect 301 /_bin/ivmaiasn/ http://ivmaiasn.sourceforge.net/
+
+Redirect 301 /jadretro/index-ru.htm http://jadretro.sourceforge.net/
+Redirect 301 /jadretro/index.htm http://jadretro.sourceforge.net/
+Redirect 301 /jadretro/ http://jadretro.sourceforge.net/
+Redirect 301 /_bin/jadretro/ http://jadretro.sourceforge.net/
+
+Redirect 302 /address.htm http://www.ivmaisoft.com/index.htm
+Redirect 302 /purchase.htm http://www.ivmaisoft.com/index.htm
+Redirect 302 /support.htm http://www.ivmaisoft.com/index.htm

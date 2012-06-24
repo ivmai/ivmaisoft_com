@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>3.10</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>RoboSoft 4.0.695</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <RoboSoft>
+    <Company_UIN>CMP-00A20F87B8</Company_UIN>
+    <Company_Description>IvMaiSoft LLC is a privately held, software development and consulting company specialized mainly in providing advanced and customized execution environments for Java applications.
+JCGO, a Java source to C code translator, is the flagship software product developed, licensed and supported by the company. With JCGO you could make your Java applications run faster, consume less system resources, harder to decompile and easier to deploy. Even more, with JCGO you could also make your Java applications run on a wider range of operating systems, computer systems, embedded devices and programmable controllers.
+Core competency: ahead-of-time (AOT) Java to C code and to native executable translation (compilation); Java VM implementations; memory garbage collector (GC) implementations; Java core class library implementations; Java graphics (GUI) back-ends; serial ports communication in Java (rxtx); ASN.1-based solutions.</Company_Description>
+    <Product_UIN>APP-00A20F8358B</Product_UIN>
+    <Search_String>JCGO</Search_String>
+    <Publish_on_CD>FALSE</Publish_on_CD>
+    <Backlink>http://www.ivmaisoft.com/backlink.htm</Backlink>
+    <RSProductType></RSProductType>
+    <Press_Release_Search_String></Press_Release_Search_String>
+    <NewsFeed_Search_String></NewsFeed_Search_String>
+    <Search_Engine_Search_String></Search_Engine_Search_String>
+    <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Search_String_Unique></Search_String_Unique>
+    <Comments_For_Reviewer></Comments_For_Reviewer>
+    <Additional_Categories></Additional_Categories>
+  </RoboSoft>
+  <Company_Info>
+    <Company_Name>IvMaiSoft LLC</Company_Name>
+    <Address_1>Pervomayskaya st.</Address_1>
+    <Address_2></Address_2>
+    <City_Town>Obninsk</City_Town>
+    <State_Province>Kaluga</State_Province>
+    <Zip_Postal_Code>123123</Zip_Postal_Code>
+    <Country>Russian Federation</Country>
+    <Company_WebSite_URL>http://www.ivmaisoft.com</Company_WebSite_URL>
+    <Contact_Info>
+      <Contact_First_Name>Ivan</Contact_First_Name>
+      <Contact_Last_Name>Maidanski</Contact_Last_Name>
+      <Contact_Email>contact@ivmaisoft.com</Contact_Email>
+      <Author_First_Name>Ivan</Author_First_Name>
+      <Author_Last_Name>Maidanski</Author_Last_Name>
+      <Author_Email>contact@ivmaisoft.com</Author_Email>
+    </Contact_Info>
+    <Support_Info>
+      <Sales_Email>contact@ivmaisoft.com</Sales_Email>
+      <Support_Email>contact@ivmaisoft.com</Support_Email>
+      <General_Email>contact@ivmaisoft.com</General_Email>
+      <Sales_Phone></Sales_Phone>
+      <Support_Phone></Support_Phone>
+      <General_Phone></General_Phone>
+      <Fax_Phone></Fax_Phone>
+    </Support_Info>
+  </Company_Info>
+  <NewsFeed>
+    <NewsFeed_FORM>Y</NewsFeed_FORM>
+    <NewsFeed_VERSION>1.0</NewsFeed_VERSION>
+    <NewsFeed_URL>http://Submit-Everywhere.com/extensions/NewsFeed.htm</NewsFeed_URL>
+    <NewsFeed_Type>RSS 0.90</NewsFeed_Type>
+    <NewsFeed_Language>English</NewsFeed_Language>
+    <NewsFeed_Purpose>News</NewsFeed_Purpose>
+    <NewsFeed_Author_Email>contact@ivmaisoft.com</NewsFeed_Author_Email>
+    <NewsFeed_Author_First_Name>Ivan</NewsFeed_Author_First_Name>
+    <NewsFeed_Author_Last_Name>Maidanski</NewsFeed_Author_Last_Name>
+    <NewsFeed_DESCRIPTION></NewsFeed_DESCRIPTION>
+    <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
+    <NewsFeed_Site_Name></NewsFeed_Site_Name>
+    <NewsFeed_Site_URL></NewsFeed_Site_URL>
+    <NewsFeed_Title></NewsFeed_Title>
+    <NewsFeed_Description_70></NewsFeed_Description_70>
+    <NewsFeed_Description_250></NewsFeed_Description_250>
+  </NewsFeed>
+  <Site>
+    <Site_FORM>Y</Site_FORM>
+    <Site_VERSION>1.0</Site_VERSION>
+    <Site_URL>http://Submit-Everywhere.com/extensions/Site.htm</Site_URL>
+    <Site_DESCRIPTION>This PAD extension allows you to add your site info into your PAD file. This info can be used by site submission software or by web directories themselves.</Site_DESCRIPTION>
+    <Site_Contact_Email>contact@ivmaisoft.com</Site_Contact_Email>
+    <Site_Contact_First_Name>Ivan</Site_Contact_First_Name>
+    <Site_Contact_Last_Name>Maidanski</Site_Contact_Last_Name>
+    <Site_Site_Title>IvMaiSoft LLC - software development and consulting company</Site_Site_Title>
+    <Site_Site_URL>http://www.ivmaisoft.com</Site_Site_URL>
+    <Site_Keywords>asn1, class, compiler, consulting, converter, decompile development, embedded, gc, java, java-to-c, java2c, java2exe, jvm, optimizer, outsourcing, rxtx, runtime, service, software, swt, translation</Site_Keywords>
+    <Site_Description_450>IvMaiSoft LLC is a privately held, software development and consulting company specialized mainly in providing advanced and customized execution environments for Java applications.
+JCGO, a Java source to C code translator, is the flagship software product developed, licensed and supported by the company. With JCGO you could make your Java applications run faster, consume less system resources, harder to decompile and easier to deploy.</Site_Description_450>
+    <Site_Description_100>IvMaiSoft LLC is a software development and consulting company specialized in Java advanced VMs.</Site_Description_100>
+    <Site_Description_250>IvMaiSoft LLC is a privately held, software development and consulting company specialized mainly in providing advanced execution environments for Java applications. JCGO, a Java source to C code translator, is the company flagship software.</Site_Description_250>
+  </Site>
+  <Program_Info>
+    <Program_Name>JCGO</Program_Name>
+    <Program_Version>1.10</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>22</Program_Release_Day>
+    <Program_Release_Year>2010</Program_Release_Year>
+    <Program_Cost_Dollars>1200</Program_Cost_Dollars>
+    <Program_Cost_Other_Code>EUR</Program_Cost_Other_Code>
+    <Program_Cost_Other>900</Program_Cost_Other>
+    <Program_Type>Shareware</Program_Type>
+    <Program_Release_Status>New Release</Program_Release_Status>
+    <Program_Install_Support>No Install Support</Program_Install_Support>
+    <Program_OS_Support>WinXP,WinVista,WinVista x64,Win7 x32,Win7 x64,Win2000,Windows2000,Windows2003,Windows Vista Ultimate,Windows Vista Ultimate x64,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64</Program_OS_Support>
+    <Program_Language>English</Program_Language>
+    <Program_Change_Info>none</Program_Change_Info>
+    <Program_System_Requirements>1 GHz CPU, 2 GiB RAM</Program_System_Requirements>
+    <Program_Category_Class>Development::Compilers &amp; Interpreters</Program_Category_Class>
+    <File_Info>
+      <File_Size_Bytes>736282</File_Size_Bytes>
+      <File_Size_K>719</File_Size_K>
+      <File_Size_MB>0.7</File_Size_MB>
+      <Filename_Versioned></Filename_Versioned>
+      <Filename_Previous></Filename_Previous>
+      <Filename_Generic></Filename_Generic>
+      <Filename_Long></Filename_Long>
+    </File_Info>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Based_On>Days</Expire_Based_On>
+      <Expire_Count></Expire_Count>
+      <Expire_Other_Info></Expire_Other_Info>
+      <Expire_Month></Expire_Month>
+      <Expire_Day></Expire_Day>
+      <Expire_Year></Expire_Year>
+    </Expire_Info>
+    <Program_Categories>Compilers,Java Tools,C/C++ Tools,Software protection,Java,C/C++,Development</Program_Categories>
+    <Limitations>20 day trial; 400 classes per program translation limit</Limitations>
+    <Awards></Awards>
+    <Program_Specific_Category></Program_Specific_Category>
+    <Includes_JAVA_VM></Includes_JAVA_VM>
+    <Includes_VB_Runtime></Includes_VB_Runtime>
+    <Includes_DirectX></Includes_DirectX>
+  </Program_Info>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>http://www.ivmaisoft.com/jcgo/</Application_Info_URL>
+      <Application_Order_URL>http://www.ivmaisoft.com/jcgo/purchase.htm</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.ivmaisoft.com/jcgo/jcgo_scrshot.gif</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.ivmaisoft.com/jcgo/jcgo_ico.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.ivmaisoft.com/jcgo/jcgo_pad.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs>
+      <Primary_Download_URL>http://www.ivmaisoft.com/_bin/jcgo/jcgo-bin-win32-x86.zip</Primary_Download_URL>
+      <Secondary_Download_URL></Secondary_Download_URL>
+      <Additional_Download_URL_1></Additional_Download_URL_1>
+      <Additional_Download_URL_2></Additional_Download_URL_2>
+    </Download_URLs>
+  </Web_Info>
+  <Permissions>
+    <Distribution_Permissions>The JCGO distributive files can be freely distributed over the Internet in the unmodified form.</Distribution_Permissions>
+    <EULA>SOFTWARE STANDARD LICENSE AGREEMENT
+              -----------------------------------
+            JCGO - Java source to C code translator
+            ---------------------------------------
+                         IvMaiSoft LLC
+                         -------------
+
+IMPORTANT - READ CAREFULLY
+This present License Agreement ("Agreement") is a legal agreement between you, a software user (either an individual or a single entity, hereinafter referred to as "You" or "Your") and the company, the author, the developer, the exclusive owner of the licensed software, the owner of the copyrights to it (hereinafter referred to as the "Licensor") for the software commercial product ("Software") identified above, which includes, but not limited to, computer software in binary form, the license key, and any user manuals and other electronic documentation supplied to You by the Licensor under this Agreement. You should carefully read the following terms and conditions before using the Software. By using this Software or purchasing the Software license, You agree to be bound by the terms of this Agreement. If You do not agree to the terms of this Agreement, You may promptly terminate this Agreement by deleting the Software from all storage media.
+
+GRANT OF LICENSE
+Upon Your acceptance of the terms and conditions of this Agreement, the Licensor grants You the right to use the Software in the manner provided below. By activating the software, You are granted a non-exclusive, nontransferable, non-commercial, time-limited trial license, without any right of sublicense, to use one or several copies of the Software for evaluation purpose. Having purchased the Software license and received the license key (the Software registration code), which explicitly defines the extent of the rights licensed to You under the present Agreement, You are hereby granted a personal or non-profit, or commercial, world-wide, royalty-free, non-exclusive, nontransferable license, without any right of sublicense, to use a copy of the Software for any legal purpose on a single computer or a group of computers (developer seats), but of no more computers at a time than the number of licenses (license codes) purchased, without any additional fee to the Licensor. A single copy of the Software is in "use" on a computer when it is loaded into temporary memory (i.e., RAM) or installed into permanent memory (e.g., hard disk, CD/DVD disk, or other storage device) of that personal computer or work station. However, installation on a network server for the sole purpose of internal distribution to one or more other computers shall not constitute "use" for which a separate license is required, provided You have the right number of licenses to use the Software for that many personal computers to which the Software is in this way distributed. You may make one copy of the Software for back-up purposes provided You do not allow third parties to access it. Solely with respect to the electronic documents supplied with the Software (and covered by this Agreement), You are granted the right to make an unlimited number of copies (either in hard copy or electronic form), provided that such copies shall be used only for internal purposes and are not republished or distributed to any third party without prior explicit permission granted to You by the Licensor.
+
+OWNERSHIP
+Except as expressly licensed to You in this Agreement, the Licensor retains all right, title and interest in and to the Software.
+
+COPYRIGHT
+Unless explicitly specified, all title and copyrights in and to the Software (including, but not limited to, any text, and scripts incorporated into the Software), the accompanying electronic documentation, and any copies of the Software are owned by the Licensor or its suppliers. The Software is protected by the Russian copyright laws and international treaty provisions. The Software is licensed, not sold. Except as stated above, this Agreement does not grant You any intellectual property rights in the Software.
+
+TRADEMARKS AND LOGOS
+Unless explicitly specified, this Agreement does not grant You any rights to use the trade names, trademarks, service marks, logos, or product names ("Marks") belonging to the Licensor. You acknowledge that You agree to not do anything harmful to or inconsistent with the rights of the Licensor in respect to any Marks. All the Marks mentioned in the Software are the property of their respective owners.
+
+USE LIMITATIONS
+The rights granted herein are subject to the following restrictions: (i) You may not copy (except for internal and back-up purposes as stated above), modify, port, adapt, translate, localize, reverse engineer, de-compile, disassemble, decrypt the Software, except and only to the extent that it is expressly permitted above and/or by applicable law notwithstanding this limitation; (ii) You may not create derivative works based on the Software unless explicitly permitted; (iii) You may not remove any patent, trademark, copyright, trade secret or other proprietary notices or labels on the Software or its documentation; (iv) except as stated above You may not transfer, lease, assign, sublicense, pledge, rent, sell, share or distribute the Software or make it available for timesharing, service bureau or on-line use, unless previously agreed to by the Licensor; (v) You may not modify the internal licensing mechanism of the Software, or change the license key (Copying the Software with a removed or corrupted internal licensing mechanism, as well as using such Software is considered illegal and is punishable by applicable laws and regulations of the country the Software is copied or used); (vi) You may not make more than two backup copies of the license key and/or distribute it (Should the Licensor find Your valid license key in a place where anyone may obtain it without restriction or Your knowledge of it, the Licensor can immediately terminate this Agreement without notice); (vii) You may not use any license key other than exclusively provided to You by the Licensor or its suppliers. Any use of the Software which is illegal under local or international law is forbidden by this Agreement. Any such action is the sole responsibility of the person committing the action.
+
+TRIAL MODE LIMITATIONS
+Before purchasing the Software license and receiving the full-functional, commercial license key file, the Software trial mode legal limitations, in addition to the use limitation stated above, are: (i) You may not use the Software in the trial mode for any purposes, including commercial, other than evaluation; (ii) You may not distribute in any form any software programs created with this Software running in the trial mode; (iii) You may not use the Software in the trial mode during more than 20 days without purchasing the license.
+
+LIMITED WARRANTY
+Upon purchasing the Software license, the Licensor warrants that: (i) to the best of knowledge and belief of the Licensor, the Software does not infringe any copyright, trade secret or other proprietary right of any third party and will take all necessary action to protect You against all costs, expenses and damages incurred in connection with any claim of infringement arising out of Your use of the Software; (ii) except for possible minor or inherent defects, the Software will function in accordance with its specification and will not intentionally cause any malicious behavior. Except for the stated above, the Software is provided on "AS IS" basis, and any use of the Software is at Your own risk. Under this Agreement You agree to assume full responsibility for determining the suitability of the Software and for the results of its use.
+
+DISCLAIMER OF WARRANTY
+To the maximum extent permitted by applicable law, unless specified in this Agreement, all express or implied conditions, representations and warranties, including, but not limited to, any implied warranty of merchantability, fitness for a particular purpose or non-infringement are disclaimed, except to the extent that these disclaimers are held to be legally invalid.
+
+HIGH RISK ACTIVITIES
+The Software is not fault-tolerant and is not designed, manufactured or intended for use as on-line control equipment in hazardous environments requiring fail-safe performance, such as in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, direct life support machines, or weapons systems, in which the failure of the Software could lead directly to death, personal injury, or severe physical or environmental damage ("High Risk Activities"). The Licensor specifically disclaims any express or implied warranty of fitness for High Risk Activities.
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES
+To the maximum extent permitted by applicable law, in no event shall the Licensor or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use the Software, even if the Licensor has been advised of the possibility of such damages.
+
+LIMITATION OF LIABILITY
+In any case, the entire liability of the Licensor and Your exclusive remedy under this Agreement shall not exceed the amount of money actually paid by You for the Software.
+
+MARKETING
+Having purchased the Software license, You agree to be identified as a customer of the Licensor, and that the Licensor may, even after termination of this Agreement, refer to You by name, trade name and/or trademark (and such references shall in no case constitute an infringement of any such trade names or trademarks, as the case may be), whether standing alone, or as part of a list of customers of the Licensor; and further, the Licensor may briefly describe Your business in the marketing materials and/or on the web site of the Licensor, in public or legal documents, provided in each case, that any such description shall not include any information expressly identified by You as trade secret. It is understood and agreed that the right and license to use Your name, trade name and/or trademark, as the case may be, is granted to the Licensor solely for the purposes as set out above.
+
+TECHNICAL SUPPORT
+The Licensor agrees to provide on-line technical support to You. This support is free of charge for the term of 180 days from the date of purchase of the Software license. You have the right to obtain further paid technical support for additional regular fee. The Licensor guarantees that the information submitted to the technical support service (as well as, the data received from You during the Software activation before the purchase) will be treated as confidential, it will be used for internal purposes solely and it will not be accessed by third parties.
+
+SOFTWARE UPGRADES
+The Software may be updated or modified from time to time (these updates are collectively referred to as "Software Upgrades"). Having purchased the Software license, You have the right to obtain Software Upgrades without additional fee while You are receiving technical support, either free of charge or not, provided by the Licensor.
+
+TERMINATION
+This Agreement is effective until terminated. This Agreement will terminate automatically if You fail to comply with any term hereof. No notice shall be required from the Licensor to effect such termination. You may also terminate this Agreement at any time. Upon termination, You agree to immediately stop any further use of the Software, destroy all copies of the Software and delete all Your license keys.
+
+KEY RECOVERY
+If the purchased Software license key was accidentally damaged or lost, the Licensor may submit another key to You, though the Licensor reserves the right to consider commercial efficiency of such actions.
+
+REFUND
+No refund is given at any time, unless authorized by the Licensor under unexpected circumstances such as the licensing mechanism of the Software fails to work, or a problem occurs that could not have been observed during the evaluation period. The Licensor reserves the right to provide refunds, or make any commercially reasonable efforts to solve any issues at the sole discretion of the Licensor. Please contact the Licensor to see if You qualify for a refund.
+
+CONTACTS
+For inquiries please contact: IvMaiSoft LLC
+e-mail: contact@ivmaisoft.com
+web site: http://www.ivmaisoft.com</EULA>
+  </Permissions>
+  <Program_Descriptions>
+    <English>
+      <Keywords>java, c, source, native, translator, converter, compiler, jvm, class, AOT, ahead-of-time, java-to-c,  java2c, java-to-exe, java2exe, portable, code, embedded, win32, linux, solaris, GUI, AWT, SWT, console, rxtx, GC, protection, library, optimization</Keywords>
+      <Char_Desc_45>JCGO - Java source to C code translator</Char_Desc_45>
+      <Char_Desc_80>JCGO - Java to C translator aimed at creation of highly-optimized native code</Char_Desc_80>
+      <Char_Desc_250>JCGO is a software product which translates (converts) programs written in Java into platform-independent C code, which could, further, be compiled (by third-party tools) into highly-optimized native code for the target platform and deployed.</Char_Desc_250>
+      <Char_Desc_450>JCGO is a commercial software product which translates programs written in Java into platform-independent C code, which could, further, be compiled (by third-party tools) into highly-optimized native code for the target platform and deployed. JCGO product is a powerful solution that enables your desktop, server-side and embedded/mobile/wireless Java applications to take full advantage of the underlying hardware.</Char_Desc_450>
+      <Char_Desc_2000>JCGO (pronounced as "j-c-go") is a software product which translates (converts) programs written in Java into platform-independent C code, which could, further, be compiled (by third-party tools) into highly-optimized native code for the target platform and deployed. JCGO is a powerful solution that enables your desktop, server-side and embedded/mobile/wireless Java applications to take full advantage of the underlying hardware. In addition, JCGO effectively protects your intellectual property by making your programs when compiled to native code as hard to reverse engineer as if they were written in C/C++.
+The JCGO translator uses some optimization algorithms that allow, together with optimizations performed by a C compiler, the resulting executable code to reach better performance if compared with the traditional Java implementations (based on the Just-In-Time technology). The produced executable does not contain nor require a Java Virtual Machine to execute, so its resource requirements are smaller than that required by a typical Java VM. This also simplifies the process of deployment and distribution of an application.
+The JCGO product is targeted mainly for the following user categories: application software developers (to get higher performance, smaller memory footprint and smaller start-up time for an application, to protect the code as an intellectual property); hardware device developers (to write device code in Java with the same performance as in C); software porters (to execute existing applications on platforms without a Java VM support); and software advanced users.
+Main (tested) target platforms: Windows (Win32 and Win64), Linux, Solaris, FreeBSD, Mac OS X (x86 and x86_64/amd64), Windows CE/Mobile/PocketPC (arm).
+For more information about the JCGO download prerequisites (the parts comprising the JCGO product) and the JCGO usage guidelines (Readme), please visit the JCGO home page.</Char_Desc_2000>
+    </English>
+    <Russian>
+      <Keywords>java, c, исходник, транслятор, конвертер, компилятор, jvm, класс, java-to-с, java2c, java-to-exe, java2exe, кросс-платформенный, код, встроенный, win32, Линукс, solaris, GUI, AWT, SWT, консольное приложение, rxtx, GC, защита, оптимизация</Keywords>
+      <Char_Desc_80>JCGO - транслятор с Java на Си для последующей компиляции в оптимизированный код</Char_Desc_80>
+      <Char_Desc_45>JCGO - транслятор с Java на Си</Char_Desc_45>
+      <Char_Desc_2000>JCGO (произносится как "джей-си-гоу") - это программный продукт, который переводит (конвертирует) программы написанные на Java в платформо-независимый Си код, который, затем, можно компилировать (с помощью сторонних программ) в оптимизированный двоичный код для целевой аппаратной платформы. JCGO является мощным решением которое позволяет вашим настольным, серверным и встроенным/мобильным Java приложениям наиболее полно использовать аппаратные возможности среды исполнения. Кроме того, JCGO эффективно защищает вашу интеллектуальную собственность делая ваши программы при компиляции в код аппаратной платформы такими же трудными для раскрытия алгоритма (по двоичному коду программы) как если бы они были написаны на Си/Си++.
+JCGO транслятор использует набор алгоритмов оптимизации, которые, вместе с оптимизацией кода выполняемой Си компилятором, позволяют созданному исполняемому коду достичь более высокой производительности в сравнении с традиционными реализациями Java-машины (основанными на технологии Just-In-Time). Созданный исполняемый код не содержит и ему не требуется для работы виртуальная Java-машина, по-этому его потребность в ресурсах системы ниже чем для типичной Java-машины. Это так же упрощает процесс создания и дистрибуции инсталляционных  пакетов для приложения.
+JCGO в основном предназначен для следующих категорий пользователей: разработчики программных продуктов (для более высокой производительности, меньшей загрузки памяти и меньшего времени запуска приложения, для защиты кода как интеллектуальной собственности); разработчики аппаратных устройств (для написания кода устройства на языке Java работающего с такой же производительностью как код написанный на Си); те, кто занимается переносом программ на другие платформы (для запуска существующих Java-программ на платформах без поддержки Java-машин); и для продвинутых пользователей программ.
+Основные (тестированные) целевые платформы: Windows, Linux, Solaris, FreeBSD, Mac OS X (x86 и x86_64/amd64), Windows CE.</Char_Desc_2000>
+      <Char_Desc_250>JCGO - это программный продукт, который переводит (конвертирует) программы написанные на Java в платформо-независимый Си код, который, затем, можно компилировать (с помощью сторонних программ) в оптимизированный двоичный код для целевой платформы.</Char_Desc_250>
+      <Char_Desc_450>JCGO - это программный продукт, который переводит (конвертирует) программы написанные на Java в платформо-независимый Си код, который, затем, можно компилировать (с помощью сторонних программ) в оптимизированный двоичный код для целевой аппаратной платформы. JCGO является мощным решением которое позволяет вашим настольным, серверным и встроенным/мобильным Java приложениям наиболее полно использовать аппаратные возможности среды исполнения.</Char_Desc_450>
+    </Russian>
+  </Program_Descriptions>
+</XML_DIZ_INFO>

@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang=en-us>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<META http-equiv="content-language" content="en-us">
+<META name="distribution" content="global">
+<META name="robots" content="all">
+<LINK rev=made href="mailto:contact@ivmaisoft.com">
+<LINK rel=stylesheet type="text/css" href="../style.css">
+<TITLE>IvMaiSoft :: JCGO (a java2c/java2exe solution)</TITLE>
+<META name="keywords"
+content="AOT, AWT, API, BDWGC, BoehmGC, C, Cpp, Classpath, Darwin, FreeBSD,
+GC, GCC, GUI, J2SE, JDK, JNI, JIT, JVM, JRE, JSound, Java, Java-source-to-C,
+Linux, MCU, MacOS, MinGW, PocketLinux, PocketPC, ROMable, SWT, Solaris, SunOS,
+Swing, TinyGC, VM, Win32, Win64, WinCE, WinMobile, Windows, acceleration,
+ahead-of-time, amd64, analysis, applet, arm, beans, certification, class,
+code, collection, command, commapi, compiler, converter, consulting, core,
+deployment, desktop, dll, download, dynamic, embedded, exe, executable,
+export, games, garbage, i586, iPad, iPhone, import, invocation, jar, jar2exe,
+java-to-c, java-to-exe, java-to-native-code, java2c, java2cpp, java2exe,
+javac, link, linkage, library, machine, math, memory, recycling, native,
+objects, online, optimizer, package, packaging, performance, plugin, program,
+protection, pure, run-time, runtime, rxtx, script, server, service, software,
+static, toolchain, translator, tuning, tutorial, virtual, x86, x86_64">
+</HEAD>
+<BODY>
+
+<DIV class=logo>
+<A href="../index.htm"><IMG src="../logo.gif" alt=""></A>
+</DIV>
+
+<DIV class=navig-bar>
+<TABLE>
+<TR>
+<TD><A href="../index.htm">[Home &amp; Search]</A></TD>
+<TD><A href="../news.htm">News</A></TD>
+<TD>JCGO</TD>
+<TD><A href="download.htm">Get it!</A></TD>
+<TD><A href="demos.htm">Demos</A></TD>
+<TD><A href="links.htm">Web Links</A></TD>
+</TABLE></DIV>
+
+<H1>JCGO</H1>
+
+<DIV class=page-foreword>
+<P><ACRONYM>JCGO</ACRONYM> (pronounced as "j-c-go") is a unique tool to
+convert Your Java application code to a platform-independent C code...
+</DIV>
+
+<DIV>
+<H3>What is JCGO?</H3>
+<P><ACRONYM>JCGO</ACRONYM> is an Open Source software product which translates
+programs written in Java into platform-independent C code, which
+could, further, be compiled (by third-party tools) into highly-optimized
+native machine code for the target platform and deployed.
+<P><ACRONYM>JCGO</ACRONYM> is a powerful solution that enables your desktop,
+server-side and embedded/mobile/wireless Java applications to take full
+advantage of the underlying hardware. In addition, JCGO effectively protects
+your intellectual property by making your programs when compiled to native
+code as hard to reverse engineer as if they were written in C/C++.
+<P>The <ACRONYM>JCGO</ACRONYM> translator uses some optimization algorithms
+that allow, together with optimizations performed by a C compiler, the
+resulting executable code to reach better performance if compared with the
+traditional Java implementations (based on the Just-In-Time technology). The
+produced executable does not contain nor require a Java Virtual Machine to
+execute, so its resource requirements are smaller than that required by a
+typical Java VM. This also simplifies the process of deployment and
+distribution of an application. In addition, the produced native code is
+highly resistant to reverse engineering and tampering.
+</DIV>
+
+<DIV>
+<H3>Scope of applicability...</H3>
+<P>The <ACRONYM>JCGO</ACRONYM> project is targeted mainly for the following
+user categories:
+<OL>
+<LI>application software developers:
+<UL>
+<LI>to get higher performance, smaller memory footprint and smaller start-up
+time for an application,
+<LI>to protect the code as an intellectual property,
+<LI>to allow an application to execute on platforms without the Java VM
+support,
+<LI>to simplify deployment, distribution and installation of an application,
+<LI>to apply time-proven and well-known C/C++ compilation and debugging tools
+to a Java application;
+</UL>
+<LI>hardware device developers:
+<UL>
+<LI>to migrate from C device code to Java,
+<LI>to write new device code in Java with nearly the same performance
+efficiency as in C,
+<LI>to use Java for 8- and 16-bit CPUs with ROM-able code and small amount of
+RAM,
+<LI>to reuse existing Java code for small device programming;
+</UL>
+<LI>software porters (to execute existing applications on platforms without a
+Java VM support);
+<LI>software advanced users (to get higher performance for frequently used
+applications, to run an application in the 64-bit mode).
+</OL></DIV>
+
+<DIV>
+<H3>JCGO basic blocks...</H3>
+<P><ACRONYM>JCGO</ACRONYM> consists of the following parts:
+<UL>
+<LI>the translator executables (one for every supported development platform);
+<LI>the JCGO-specific part of the Java runtime environment;
+<LI>the JCGO-specific part of a C runtime environment;
+<LI>the precompiled libraries part, the supplementary and JCGO-specific
+auxiliary tools;
+<LI>miscellaneous and sample source files, and the accompanying documentation.
+</UL>
+<P>For more technical information about the <ACRONYM>JCGO</ACRONYM>, please
+look into the accompanying
+<A href="https://raw.github.com/ivmai/JCGO/master/README">manual</A>,
+<A href="https://raw.github.com/ivmai/JCGO/master/FAQ.txt">FAQ</A>, or ask the
+<A class=mailto href="mailto:support@ivmaisoft.com">"JCGO tech support"</A>
+staff.
+</DIV>
+
+<DIV>
+<H3>What is Not JCGO?</H3>
+<P><ACRONYM>JCGO</ACRONYM> is not for:
+<UL>
+<LI><ACRONYM>JCGO</ACRONYM> does not produce maintainable <ACRONYM>C</ACRONYM>
+code (but it produces human-readable and debuggable code), so you shouldn't
+try to use JCGO to migrate your Java project to a C/C++ one;
+<LI><ACRONYM>JCGO</ACRONYM> does not support <ACRONYM>JDK</ACRONYM> v1.5+
+language (documented in the <ACRONYM>JLS</ACRONYM> v3.0) features like Java
+generics, primitive types auto-wrapping, for-each cycles and annotations;
+<LI><ACRONYM>JCGO</ACRONYM> is unable to tranlate Java class files as it
+tranlates only the Java source files;
+<LI><ACRONYM>JCGO</ACRONYM> does not support dynamic class loading unless the
+class source is added to the translation set (but the Java Proxy classes are
+supported);
+<LI><ACRONYM>JCGO</ACRONYM> does not support separate translation of Java
+classes or packages (instead, it translates the whole Java application at
+once);
+<LI><ACRONYM>JCGO</ACRONYM> does not cypher (protect) character strings
+contained in the classes of your application (instead, the strings are placed
+in the executable file as <ACRONYM>ASCII</ACRONYM>/Unicode ones and accessed
+directly by the compiled Java code without any initialization);
+<LI><ACRONYM>JCGO</ACRONYM> is not an easy-to-use tool (at least, you should
+have the full source code of your Java application and of the libraries it
+uses, you should also be familiar with the C/C++ compilation means for your
+target platform, and be ready to debug your translated application in case,
+e.g., you forget to add some of your dynamic-loaded classes in the translation
+set).
+</UL></DIV>
+
+<DIV>
+<H3>Our service...</H3>
+<P>Instead of learning how to apply JCGO to your project, You may let us do
+the translation and compilation work for You at a small price. Send the
+requests to
+<A class=mailto href="mailto:sales@ivmaisoft.com">&lt;sales@ivmaisoft.com&gt;</A>.
+</DIV>
+
+<DIV>
+<H3>Licensing and support policy...</H3>
+<P><ACRONYM>JCGO</ACRONYM> is an Open Source project released under the terms
+of GNU Classpath license.
+<P>JCGO could be used in a commercial project. There are no runtime fees.
+</DIV>
+
+<DIV class=page-footer>
+<P class=keywords>Keywords: AOT AWT API BDWGC BoehmGC C Cpp Classpath Darwin
+FreeBSD GC GCC GUI J2SE JDK JNI JIT JVM JRE JSound Java Java-source-to-C Linux
+MCU MacOS MinGW PocketLinux PocketPC ROMable SWT Solaris SunOS Swing TinyGC
+VM Win32 Win64 WinCE WinMobile Windows acceleration ahead-of-time amd64
+analysis applet arm beans certification class code collection command commapi
+compiler converter consulting core deployment desktop dll download dynamic
+embedded exe executable export games garbage i586 iPad iPhone import
+invocation jar jar2exe java-to-c java-to-exe java-to-native-code java2c
+java2cpp java2exe javac link linkage library machine math memory recycling
+native objects online optimizer package packaging performance plugin program
+protection pure run-time runtime rxtx script server service software static
+toolchain translator tuning tutorial virtual x86 x86_64 "java native compiler"
+"java to .c"
+</P>
+<TABLE>
+<TR>
+<TD class=modif-date>Last updated: <SPAN class=date>4-Oct-2011</SPAN></TD>
+<TD class=external-counter>
+<script type="text/javascript" language="javascript"> hotlog_js="1.0"; hotlog_r=""+Math.random()+"&s=2048595&im=33&r="+ escape(document.referrer)+"&pg="+escape(window.location.href); document.cookie="hotlog=1; path=/"; hotlog_r+="&c="+(document.cookie?"Y":"N"); </script>
+<script type="text/javascript" language="javascript1.1"> hotlog_js="1.1"; hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N"); </script>
+<script type="text/javascript" language="javascript1.2"> hotlog_js="1.2"; hotlog_r+="&wh="+screen.width+"x"+screen.height+"&px="+ (((navigator.appName.substring(0,3)=="Mic"))?screen.colorDepth:screen.pixelDepth); </script>
+<script type="text/javascript" language="javascript1.3"> hotlog_js="1.3"; </script>
+<script type="text/javascript" language="javascript"> hotlog_r+="&js="+hotlog_js; document.write('<a href="http://click.hotlog.ru/?2048595" target="_top"><img '+ 'src="http://hit33.hotlog.ru/cgi-bin/hotlog/count?'+ hotlog_r+'" border="0" width="88" height="31" alt="HotLog"><\/a>'); </script>
+<noscript> <a href="http://click.hotlog.ru/?2048595" target="_top"><img src="http://hit33.hotlog.ru/cgi-bin/hotlog/count?s=2048595&im=33" border="0" width="88" height="31" alt="HotLog"></a> </noscript>
+</TD>
+<TD class=copyright>&copy; 2010-2011 <A class=mailto href="mailto:contact@ivmaisoft.com">IvMaiSoft LLC</A>.</TD>
+</TABLE>
+</DIV>
+
+</BODY></HTML>

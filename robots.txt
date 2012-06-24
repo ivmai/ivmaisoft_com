@@ -1,0 +1,4 @@
+
+User-Agent: *
+Host: www.ivmaisoft.com
+sitemap: http://www.ivmaisoft.com/sitemap.xml

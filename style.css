@@ -1,0 +1,364 @@
+
+HTML {
+ font-size: 100%;
+}
+
+BODY {
+ margin: 0.8em;
+ font-family: Verdana, helvetica, sans-serif;
+ color: black;
+ background: #eee url("bground.jpg");
+}
+
+TABLE, INPUT, SELECT, TH, TD {
+ font-size: 1em;
+}
+
+DIV.logo {
+ clear: both;
+ margin: 0;
+}
+
+DIV.logo A {
+ color: white;
+}
+
+DIV.logo IMG {
+ border: 0;
+ margin: 0;
+ width: 226px;
+ height: 66px;
+}
+
+DIV.logo TABLE {
+ margin: 0;
+ width: 100%;
+}
+
+DIV.logo TABLE TD {
+ padding: 0;
+}
+
+DIV.logo FORM {
+ white-space: nowrap;
+ text-align: center;
+ border-style: dashed;
+ border-width: 1px;
+ padding: 0.2em;
+ margin-bottom: 0;
+ margin-right: 0.3em;
+}
+
+DIV.navig-bar {
+ min-width: 45em;
+ color: red;
+ background: #9bd;
+ text-align: center;
+ white-space: nowrap;
+ padding: 0;
+ font-size: 100%;
+ border-top-style: inset;
+ border-bottom-style: outset;
+ margin-top: 0;
+ margin-bottom: 1em;
+}
+
+DIV.navig-bar TABLE {
+ padding: 0;
+ margin: 0 auto 0 auto;
+}
+
+DIV.navig-bar TD {
+ white-space: nowrap;
+ text-align: center;
+ border-width: 1px 1px 0 1px;
+ border-color: black;
+ border-style: solid;
+ padding: 0 1.2em 0 1.2em;
+ margin-bottom: 1em;
+ font-family: Lucida, sans-serif;
+ background-color: #9bd;
+ color: olive;
+}
+
+DIV.navig-bar :link { color: blue; }
+
+DIV.navig-bar :visited { color: blue; }
+
+DIV.navig-bar :active { color: blue; }
+
+DIV.navig-bar :hover {
+ background: black;
+ color: white;
+}
+
+DIV.page-foreword {
+ font-style: italic;
+}
+
+H1 {
+ clear: both;
+ margin-top: 0.8em;
+ text-align: center;
+ word-spacing: 0.3em;
+ font-weight: bold;
+ text-decoration: underline;
+}
+
+H2 {
+ clear: both;
+ margin-top: 1em;
+ text-align: center;
+ font-weight: bold;
+ color: olive;
+}
+
+H3 {
+ clear: both;
+ text-align: left;
+ margin-left: 0.3em;
+ margin-bottom: 0.1em;
+}
+
+H4 {
+ clear: both;
+ text-align: left;
+ margin-bottom: 0.1em;
+}
+
+P {
+ text-align: justify;
+ text-indent: 0.7em;
+ margin-top: 0.2em;
+ margin-bottom: 0;
+}
+
+OL, UL {
+ text-align: left;
+ text-indent: 1.1em;
+ margin: 0;
+ list-style-position: inside;
+ padding: 0;
+}
+
+OL OL, OL UL, UL OL, UL UL {
+ padding-left: 1.2em;
+}
+
+IMG {
+ border: 0;
+ margin: 2px;
+}
+
+IMG.float-right {
+ float: right;
+}
+
+ACRONYM {
+ font-weight: bolder;
+ white-space: nowrap;
+}
+
+CODE {
+ font-family: monospace;
+ font-size: larger;
+}
+
+PRE {
+ padding: 0;
+ margin: 0 0 0 1.3em;
+}
+
+TABLE {
+ margin: 0.5em;
+}
+
+TABLE.info-table TH.short-field {
+ width: 5em;
+}
+
+TABLE.info-table TD {
+ text-align: center;
+}
+
+TABLE.info-table TD.textual {
+ text-align: left;
+}
+
+CAPTION {
+ text-align: center;
+ font-style: italic;
+ font-weight: bold;
+ font-size: 90%;
+ color: #088;
+ margin: 1.5em 25% 0 25%;
+}
+
+TR.table-header {
+ font-weight: bold;
+}
+
+TH {
+ text-align: center;
+ padding-left: 0.1em;
+ padding-right: 0.1em;
+}
+
+TH.widest-column, TD.widest-column {
+ min-width: 20em;
+ width: 99%;
+}
+
+TD {
+ padding-left: 0.3em;
+ padding-right: 0.3em;
+}
+
+A:link { color: blue; }
+
+A:visited { color: darkmagenta; }
+
+A.external:visited { color: darkred; }
+
+A:hover { color: red; }
+
+A:active { color: green; }
+
+A {
+ white-space: nowrap;
+}
+
+A.source-distrib {
+ border-bottom-style: dashed;
+ border-bottom-width: 1px;
+ text-decoration: none;
+}
+
+A.distrib-file {
+ border-bottom-style: dashed;
+ border-bottom-width: 1px;
+ text-decoration: none;
+}
+
+A.external { }
+
+A.mailto {
+ color: teal;
+ font-style: oblique;
+}
+
+DIV {
+ min-width: 35em;
+ margin-top: 1em;
+}
+
+SPAN.important {
+ color: olive;
+ font-style: italic;
+}
+
+SPAN.date {
+ white-space: nowrap;
+ font-style: oblique;
+ font-weight: lighter;
+}
+
+DIV.disclaimer {
+ border-top: thin solid blue;
+ text-align: center;
+ font-size: 100%;
+ font-family: monospace;
+}
+
+DIV.disclaimer H6 {
+ margin: 0.2em;
+}
+
+DIV.disclaimer P {
+ text-indent: 0.5em;
+}
+
+DIV.page-footer {
+ border-top: thin solid blue;
+ margin-top: 1.2em;
+ text-align: center;
+}
+
+DIV.page-footer P.keywords {
+ font-size: 70%;
+ color: green;
+}
+
+DIV.page-footer TD.external-counter A {
+ color: white;
+}
+
+DIV.page-footer SPAN.back-links {
+ color: white;
+ white-space: nowrap;
+ font-size: 30%;
+}
+
+DIV.page-footer TABLE {
+ width: 100%;
+ margin: 0;
+}
+
+DIV.page-footer TABLE TD {
+ vertical-align: top;
+}
+
+TD.modif-date {
+ text-align: left;
+ white-space: nowrap;
+ color: olive;
+}
+
+TD.visit-counter {
+ white-space: nowrap;
+ text-align: right;
+}
+
+TD.visit-counter IMG {
+ vertical-align: bottom;
+ border: 0;
+ margin: 0 0 0.1em 0;
+ width: 72px;
+ height: 16px;
+}
+
+TD.external-counter {
+ text-align: right;
+ width: 99%;
+}
+
+.copyright {
+ text-align: right;
+ white-space: nowrap;
+ font-size: smaller;
+ font-weight: lighter;
+}
+
+TD.copyright {
+ color: olive;
+}
+
+TD.copyright A {
+ color: olive;
+}
+
+DIV.section {
+ border-bottom: thin solid blue;
+ padding-bottom: 0.8em;
+}
+
+DIV.section-contents {
+ padding-bottom: 0.8em;
+}
+
+DIV.subsection {
+ margin-bottom: 0.9em;
+ border-top: 1pt dashed blue;
+}
+
+/* End of css file */
