@@ -1,5 +1,8 @@
 # Files to be ignored by Git.
 
+# Site address: ivmaisoft.com
+# Internal CMS root folder: /public_html
+
 *~
 
 /_bin/
