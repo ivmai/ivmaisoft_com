@@ -4,7 +4,7 @@ RewriteCond %{HTTP_HOST} ^ivmaisoft\.com [NC]
 RewriteRule (.*) http://www\.ivmaisoft\.com/$1 [R=301,L]
 
 AddType application/x-7z-compressed .7z
-SetEnvIfNoCase Request_URI \.(7z|bz2)$ no-gzip dont-vary
+SetEnvIfNoCase Request_URI \.(7z|bz2|gz)$ no-gzip dont-vary
 
 Redirect 301 /ivmaiasn/index.htm http://ivmaiasn.sourceforge.net/
 Redirect 301 /ivmaiasn/ http://ivmaiasn.sourceforge.net/
