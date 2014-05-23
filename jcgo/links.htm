@@ -57,6 +57,7 @@ for you.
 <LI><A href="#c-compilers">C/C++ compiler suites</A>,
 <LI><A href="#standard-libc">C/C++ standard "LibC" library implementations</A>,
 <LI><A href="#c-misc-libs">C/C++ stand-alone well-known libraries</A>,
+<LI><A href="#gc-libs">C/C++ garbage collector libraries</A>,
 <LI><A href="#c-small-libs">Small C libraries partially implementing standard API</A>,
 <LI><A href="#c-graphics">C/C++ stand-alone graphics libraries</A>,
 <LI><A href="#exe-packers">Native executable packers and protectors</A>,
@@ -143,7 +144,6 @@ for you.
 <LI><A class=external target="_blank" href="http://www.netlib.org/fdlibm/">fdlibm</A> (<ACRONYM>LibM</ACRONYM> implementation)
 <LI><A class=external target="_blank" href="http://pauillac.inria.fr/~xleroy/linuxthreads/">Linuxthreads</A> (<ACRONYM>POSIX 1003.1c</ACRONYM> kernel threads for <ACRONYM>Linux</ACRONYM>)
 <LI><A class=external target="_blank" href="http://www.gnu.org/software/pth/">GNU Pth</A> (The <ACRONYM>GNU</ACRONYM> Portable <ACRONYM>POSIX</ACRONYM>/<ACRONYM>ANSI-C</ACRONYM> Threads)
-<LI><A class=external target="_blank" href="http://www.hboehm.info/gc/">BoehmGC/BDWGC</A> (Boehm-Demers-Weiser Conservative Garbage Collector) [<A class=external target="_blank" href="https://github.com/ivmai/bdwgc">development Git repo</A>]
 <LI><A class=external target="_blank" href="http://www.hpl.hp.com/research/linux/atomic_ops/">libatomic_ops</A> (atomic memory operations library, part of <ACRONYM>BDWGC</ACRONYM>) [<A class=external target="_blank" href="https://github.com/ivmai/libatomic_ops">development Git repo</A>]
 <LI><A class=external target="_blank" href="http://concurrencykit.org">Concurrency Kit</A> (<ACRONYM>C</ACRONYM> library containing a plethora of concurrency primitives and lock-less data structures)
 <LI><A class=external target="_blank" href="http://trac.mcs.anl.gov/projects/openpa/">OpenPA</A> (portable library providing a consistent <ACRONYM>C</ACRONYM> <ACRONYM>API</ACRONYM> for performing atomic operations)
@@ -157,10 +157,21 @@ for you.
 <LI><A class=external target="_blank" href="http://www.fluidsynth.org">FluidSynth</A> (a real-time software synthesizer based on the <ACRONYM>SoundFont</ACRONYM>)
 </UL></DIV>
 
+<DIV class=subsection id=gc-libs><A name=gc-libs></A>
+<H3>C/C++ garbage collector libraries</H3>
+<UL>
+<LI><A class=external target="_blank" href="http://www.hboehm.info/gc/">BoehmGC/BDWGC</A> (Boehm-Demers-Weiser Conservative Garbage Collector) [<A class=external target="_blank" href="https://github.com/ivmai/bdwgc">development Git repo</A>]
+<LI><A class=external target="_blank" href="http://tinygc.sourceforge.net">TinyGC</A> (Tiny Garbage Collector - compact implementation of Boehm <ACRONYM>GC</ACRONYM> <ACRONYM>API</ACRONYM> subset)
+<LI><A class=external target="_blank" href="http://sourceforge.net/projects/meixnergc/">MeixnerGC</A> (Precise incremental mark and sweep garbage collector and smart pointer for C++)
+<LI><A class=external target="_blank" href="http://sourceforge.net/projects/libgc/">LibGC for C++</A> (Portable garbage collection lib for C++ which uses the mark-and-sweep algorithm)
+<LI><A class=external target="_blank" href="http://gcplusplus.sourceforge.net">GC++</A> (A garbage collector for C++)
+<LI><A class=external target="_blank" href="http://smieciuch.sourceforge.net">Smieciuch GC</A> (Precise or nearly precise tracing garbage collector for C/C++)
+<LI><A class=external target="_blank" href="http://sourceforge.net/projects/sgcl/">SGCL</A> (Precise concurrent Garbage Collection library for C++)
+</UL></DIV>
+
 <DIV class=subsection id=c-small-libs><A name=c-small-libs></A>
 <H3>Small C libraries partially implementing standard API</H3>
 <UL>
-<LI><A class=external target="_blank" href="http://tinygc.sourceforge.net">TinyGC</A> (Tiny Garbage Collector - compact implementation of Boehm <ACRONYM>GC</ACRONYM> <ACRONYM>API</ACRONYM> subset)
 <LI><A href="index.htm">T-PThread</A> (Tiny portable "pthread" implementation) - part of <ACRONYM>JCGO</ACRONYM>
 </UL></DIV>
 
@@ -593,7 +604,7 @@ obfuscate, optimize, performance, protection
 </P>
 <TABLE>
 <TR>
-<TD class=modif-date>Last updated: <SPAN class=date>1-May-2014</SPAN></TD>
+<TD class=modif-date>Last updated: <SPAN class=date>24-May-2014</SPAN></TD>
 <TD class=external-counter>
 <script type="text/javascript" language="javascript"> hotlog_js="1.0"; hotlog_r=""+Math.random()+"&s=2048595&im=33&r="+ escape(document.referrer)+"&pg="+escape(window.location.href); document.cookie="hotlog=1; path=/"; hotlog_r+="&c="+(document.cookie?"Y":"N"); </script>
 <script type="text/javascript" language="javascript1.1"> hotlog_js="1.1"; hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N"); </script>
